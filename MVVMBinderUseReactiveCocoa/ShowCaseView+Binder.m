@@ -8,7 +8,7 @@
 
 #import "ShowCaseView+Binder.h"
 #import "ShowCaseTableViewCell.h"
-#import <objc/objc-runtime.h>
+#import <objc/runtime.h>
 
 static void *viewModelKey = &viewModelKey;
 

@@ -5,3 +5,24 @@ MVVMBinderUseReactiveCocoa.xcodeproj/project.xcworkspace/xcuserdata/gz.xcuserdat
 MVVMBinderUseReactiveCocoa.xcodeproj/project.xcworkspace/xcuserdata
 MVVMBinderUseReactiveCocoa.xcodeproj/project.xcworkspace/xcuserdata/gz.xcuserdatad/UserInterfaceState.xcuserstate
 MVVMBinderUseReactiveCocoa.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+Carthage/Build/iOS/Result.framework.dSYM
+Carthage/Build/iOS/ReactiveCocoa.framework.dSYM
+Carthage/Build/iOS/Kiwi.framework.dSYM
+Carthage/Build/iOS/870ED104-1425-38B7-9570-1700ADD21796.bcsymbolmap
+Carthage/Build/iOS/95392A6E-17A1-35D1-A2C5-7A1B437CBF7E.bcsymbolmap
+Carthage/Build/iOS/C53AC6BB-D2F3-311F-BC40-06698160E46F.bcsymbolmap
+Carthage/Build/iOS/EAC32C89-8373-3297-B8FD-4A0BFCBBF492.bcsymbolmap
+Carthage/Build/watchOS
+Carthage/Build/Mac
+Carthage/Build/tvOS
+Pods/Masonry
+Pods/PINCache
+Pods/Target Support Files
+Pods
+Pods/Headers
+Pods/PINRemoteImage
+Pods/Pods.xcodeproj
+Pods/AFNetworking
+Pods/SDWebImage
+Pods/AsyncDisplayKit
+Pods/Manifest.lock

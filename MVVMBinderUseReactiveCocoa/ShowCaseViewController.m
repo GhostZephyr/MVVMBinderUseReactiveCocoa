@@ -9,7 +9,9 @@
 #import "ShowCaseViewController.h"
 #import "ShowCaseView+Binder.h"
 #import "ShowCaseViewModel.h"
+#import "MVVMBinderUseReactiveCocoa-Swift.h"
 #import "ShowCaseNode+Binder.h"
+
 
 @interface ShowCaseViewController()
 
@@ -31,9 +33,12 @@
                 self.showCaseView = [ShowCaseView new];
                 ((ShowCaseView *)self.showCaseView).parentController = self;
                 break;
-                
-            default:
+            case ShowCaseViewType_Node:
                 self.showCaseView = [ShowCaseNode new];
+                ((ShowCaseNode *)self.showCaseView).parentController = self;
+            default:
+
+                self.showCaseView = [ShowCaseViewSwiftBinder new];
                 ((ShowCaseNode *)self.showCaseView).parentController = self;
                 break;
         }

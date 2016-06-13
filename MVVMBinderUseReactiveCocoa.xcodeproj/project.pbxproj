@@ -29,8 +29,9 @@
 		2569B2E11D012FA70094188A /* Kiwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2569B2DF1D012F9A0094188A /* Kiwi.framework */; };
 		2569B2E21D0130040094188A /* Kiwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2569B2DF1D012F9A0094188A /* Kiwi.framework */; };
 		2569B2E31D0130040094188A /* Kiwi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2569B2DF1D012F9A0094188A /* Kiwi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2569B2E61D0135770094188A /* NormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2569B2E51D0135770094188A /* NormalViewController.m */; };
-		25D057521D0135E400EB17C9 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D057511D0135E400EB17C9 /* RACViewController.m */; };
+		2591F7491D0D67BF002505D2 /* ShowCaseViewSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2591F7481D0D67BF002505D2 /* ShowCaseViewSwift.swift */; };
+		25991D031D0E8FBC00FB269E /* libobjc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25991D021D0E8FBC00FB269E /* libobjc.tbd */; };
+		25C4EC0D1D0E5372004B8758 /* ShowCaseViewSwiftBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4EC0C1D0E5372004B8758 /* ShowCaseViewSwiftBinder.swift */; };
 		25D057581D01516400EB17C9 /* ShowCaseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D057571D01516400EB17C9 /* ShowCaseNode.m */; };
 		25D0575B1D01568600EB17C9 /* ShowCaseNode+Binder.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D0575A1D01568600EB17C9 /* ShowCaseNode+Binder.m */; };
 		25D0575E1D015B6A00EB17C9 /* ShowCaseCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D0575D1D015B6A00EB17C9 /* ShowCaseCellNode.m */; };
@@ -96,10 +97,10 @@
 		2569B2D01D0055270094188A /* ShowCaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowCaseTableViewCell.m; sourceTree = "<group>"; };
 		2569B2DC1D012D8E0094188A /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKiwi.a; path = "../../../../Library/Developer/Xcode/DerivedData/MVVMBinderUseReactiveCocoa-dyhdqwwgbhdsmlangvzvtqucprbo/Build/Products/Debug-iphonesimulator/libKiwi.a"; sourceTree = "<group>"; };
 		2569B2DF1D012F9A0094188A /* Kiwi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kiwi.framework; path = Carthage/Build/iOS/Kiwi.framework; sourceTree = "<group>"; };
-		2569B2E41D0135770094188A /* NormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalViewController.h; sourceTree = "<group>"; };
-		2569B2E51D0135770094188A /* NormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalViewController.m; sourceTree = "<group>"; };
-		25D057501D0135E400EB17C9 /* RACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
-		25D057511D0135E400EB17C9 /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
+		2591F7471D0D67BF002505D2 /* MVVMBinderUseReactiveCocoa-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MVVMBinderUseReactiveCocoa-Bridging-Header.h"; sourceTree = "<group>"; };
+		2591F7481D0D67BF002505D2 /* ShowCaseViewSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCaseViewSwift.swift; sourceTree = "<group>"; };
+		25991D021D0E8FBC00FB269E /* libobjc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.tbd; path = usr/lib/libobjc.tbd; sourceTree = SDKROOT; };
+		25C4EC0C1D0E5372004B8758 /* ShowCaseViewSwiftBinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCaseViewSwiftBinder.swift; sourceTree = "<group>"; };
 		25D057561D01516400EB17C9 /* ShowCaseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowCaseNode.h; sourceTree = "<group>"; };
 		25D057571D01516400EB17C9 /* ShowCaseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowCaseNode.m; sourceTree = "<group>"; };
 		25D057591D01568600EB17C9 /* ShowCaseNode+Binder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShowCaseNode+Binder.h"; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25991D031D0E8FBC00FB269E /* libobjc.tbd in Frameworks */,
 				2569B2B21CFFD4500094188A /* Result.framework in Frameworks */,
 				F550C6184C2CE57143BC7DBB /* libPods.a in Frameworks */,
 				2569B2E21D0130040094188A /* Kiwi.framework in Frameworks */,
@@ -160,6 +162,7 @@
 		2569B2451CFED7EE0094188A /* MVVMBinderUseReactiveCocoa */ = {
 			isa = PBXGroup;
 			children = (
+				25C4EC041D0E4E85004B8758 /* Swift */,
 				2569B2771CFEE1C60094188A /* Protocol */,
 				2569B2761CFEE1C00094188A /* View */,
 				2569B28B1CFEE3880094188A /* Binder */,
@@ -171,10 +174,6 @@
 				2569B24D1CFED7EE0094188A /* ViewController.m */,
 				2569B2961CFFBC530094188A /* ShowCaseViewController.h */,
 				2569B2971CFFBC530094188A /* ShowCaseViewController.m */,
-				2569B2E41D0135770094188A /* NormalViewController.h */,
-				2569B2E51D0135770094188A /* NormalViewController.m */,
-				25D057501D0135E400EB17C9 /* RACViewController.h */,
-				25D057511D0135E400EB17C9 /* RACViewController.m */,
 				2569B24F1CFED7EE0094188A /* Main.storyboard */,
 				2569B2521CFED7EE0094188A /* Assets.xcassets */,
 				2569B2541CFED7EE0094188A /* LaunchScreen.storyboard */,
@@ -220,6 +219,7 @@
 				25D057571D01516400EB17C9 /* ShowCaseNode.m */,
 				25D0575C1D015B6A00EB17C9 /* ShowCaseCellNode.h */,
 				25D0575D1D015B6A00EB17C9 /* ShowCaseCellNode.m */,
+				2591F7471D0D67BF002505D2 /* MVVMBinderUseReactiveCocoa-Bridging-Header.h */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -262,6 +262,39 @@
 			name = Binder;
 			sourceTree = "<group>";
 		};
+		25C4EC041D0E4E85004B8758 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				25C4EC0B1D0E50A2004B8758 /* ViewModel */,
+				25C4EC0A1D0E509F004B8758 /* View */,
+				25C4EC091D0E5091004B8758 /* Binder */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		25C4EC091D0E5091004B8758 /* Binder */ = {
+			isa = PBXGroup;
+			children = (
+				25C4EC0C1D0E5372004B8758 /* ShowCaseViewSwiftBinder.swift */,
+			);
+			name = Binder;
+			sourceTree = "<group>";
+		};
+		25C4EC0A1D0E509F004B8758 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2591F7481D0D67BF002505D2 /* ShowCaseViewSwift.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		25C4EC0B1D0E50A2004B8758 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		3568F449AB3EF92A20213446 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +307,7 @@
 		4021D675B4F9EED2683CF745 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25991D021D0E8FBC00FB269E /* libobjc.tbd */,
 				2569B2DF1D012F9A0094188A /* Kiwi.framework */,
 				2569B2DC1D012D8E0094188A /* libKiwi.a */,
 				2569B26B1CFEE1120094188A /* ReactiveCocoa.framework */,
@@ -442,15 +476,15 @@
 				2569B2941CFEE3BF0094188A /* ShowCaseView+Binder.m in Sources */,
 				2569B2D11D0055270094188A /* ShowCaseTableViewCell.m in Sources */,
 				25D0575E1D015B6A00EB17C9 /* ShowCaseCellNode.m in Sources */,
-				2569B2E61D0135770094188A /* NormalViewController.m in Sources */,
 				2569B24E1CFED7EE0094188A /* ViewController.m in Sources */,
+				2591F7491D0D67BF002505D2 /* ShowCaseViewSwift.swift in Sources */,
 				2569B2981CFFBC530094188A /* ShowCaseViewController.m in Sources */,
 				2569B24B1CFED7EE0094188A /* AppDelegate.m in Sources */,
-				25D057521D0135E400EB17C9 /* RACViewController.m in Sources */,
 				2569B2821CFEE28A0094188A /* ShowCaseViewModel.m in Sources */,
 				2569B2481CFED7EE0094188A /* main.m in Sources */,
 				25D0575B1D01568600EB17C9 /* ShowCaseNode+Binder.m in Sources */,
 				2569B2891CFEE2D30094188A /* ShowCaseViewModelService.m in Sources */,
+				25C4EC0D1D0E5372004B8758 /* ShowCaseViewSwiftBinder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,9 +613,11 @@
 			baseConfigurationReference = 522100BC7F63C4F82F1D1850 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -593,6 +629,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gz.MVVMBinderUseReactiveCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MVVMBinderUseReactiveCocoa/MVVMBinderUseReactiveCocoa-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -601,9 +639,11 @@
 			baseConfigurationReference = 753617AE657F7BD8F6A0C9C7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -615,6 +655,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gz.MVVMBinderUseReactiveCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MVVMBinderUseReactiveCocoa/MVVMBinderUseReactiveCocoa-Bridging-Header.h";
 			};
 			name = Release;
 		};

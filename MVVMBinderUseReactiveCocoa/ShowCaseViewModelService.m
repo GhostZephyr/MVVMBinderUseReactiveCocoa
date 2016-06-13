@@ -14,7 +14,7 @@
 - (RACSignal *)fetchDataWithParam:(NSString *)param {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-        [manager GET:@"https://api.douban.com/v2/book/search" parameters:@{@"q":@"帅哥"} progress:^(NSProgress * _Nonnull downloadProgress) {
+        [manager GET:@"https://api.douban.com/v2/book/search" parameters:@{@"q":@"美女"} progress:^(NSProgress * _Nonnull downloadProgress) {
             NSLog(@"progress:%@", downloadProgress);
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             // 在这里就可以拿到数据，将其丢出去
@@ -31,7 +31,7 @@
         }];
         
         return [RACDisposable disposableWithBlock:^{
-            NSLog(@"释放");
+            
         }];
     }];
 }

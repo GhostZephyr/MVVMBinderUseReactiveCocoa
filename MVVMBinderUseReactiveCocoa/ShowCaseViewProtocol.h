@@ -24,6 +24,11 @@
 - (void)dettach;
 
 @optional
+
+- (void)attach:(UIView *)rootView parentController:(UIViewController *)controller;
+
+- (void)attach:(UIView *)rootView parentController:(UIViewController *)controller navigator:(UINavigationController *)navigator;
+
 /**
  *  绑定到指定的ViewModel后会展示其数据
  *

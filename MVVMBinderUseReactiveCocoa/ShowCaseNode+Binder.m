@@ -7,7 +7,7 @@
 //
 
 #import "ShowCaseNode+Binder.h"
-#import <objc/objc-runtime.h>
+#import <objc/runtime.h>
 #import "ShowCaseCellNode.h"
 
 static void *viewModelKey = &viewModelKey;

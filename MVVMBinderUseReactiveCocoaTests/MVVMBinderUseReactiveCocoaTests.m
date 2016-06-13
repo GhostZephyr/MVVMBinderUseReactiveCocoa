@@ -22,6 +22,8 @@ describe(@"ShowCaseViewModel", ^{
         showCaseVM.isActive = YES;
     });
     
+
+    
     afterEach(^{
         showCaseVM = nil;
     });

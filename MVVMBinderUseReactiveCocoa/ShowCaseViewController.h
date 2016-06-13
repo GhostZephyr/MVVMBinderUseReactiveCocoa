@@ -11,6 +11,7 @@
 typedef enum : NSUInteger {
     ShowCaseViewType_Normal,
     ShowCaseViewType_Node,
+    ShowCaseViewType_SwiftNode,
 } ShowCaseViewType;
 
 @interface ShowCaseViewController : UIViewController

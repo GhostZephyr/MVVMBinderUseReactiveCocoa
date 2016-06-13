@@ -34,25 +34,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdF-CF-aVJ">
-                                <rect key="frame" x="258" y="285" width="83" height="30"/>
-                                <state key="normal" title="NormalView"/>
+                                <rect key="frame" x="217" y="285" width="165" height="30"/>
+                                <state key="normal" title="Objective-CNormalView"/>
                                 <connections>
                                     <action selector="toNormalShowCase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="huq-O0-wtK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29i-6L-sDO">
-                                <rect key="frame" x="265" y="325" width="70" height="30"/>
-                                <state key="normal" title="NodeView"/>
+                                <rect key="frame" x="220" y="325" width="161" height="30"/>
+                                <state key="normal" title="AsyncDisplayNodeView"/>
                                 <connections>
                                     <action selector="toNormalShowCase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jw6-qZ-4Eo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTF-Gv-8zc">
+                                <rect key="frame" x="266" y="363" width="68" height="30"/>
+                                <state key="normal" title="SwiftView"/>
+                                <connections>
+                                    <action selector="toNormalShowCase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wt9-tK-dGU"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="29i-6L-sDO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A5o-N8-mOQ"/>
+                            <constraint firstItem="TTF-Gv-8zc" firstAttribute="centerX" secondItem="29i-6L-sDO" secondAttribute="centerX" id="BW8-kU-deV"/>
                             <constraint firstItem="29i-6L-sDO" firstAttribute="top" secondItem="NdF-CF-aVJ" secondAttribute="bottom" constant="10" id="Gd5-h5-Tvp"/>
                             <constraint firstItem="NdF-CF-aVJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LBS-49-mga"/>
+                            <constraint firstItem="TTF-Gv-8zc" firstAttribute="top" secondItem="29i-6L-sDO" secondAttribute="bottom" constant="8" symbolic="YES" id="WuI-P6-fsA"/>
                             <constraint firstItem="NdF-CF-aVJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hPE-E4-FAa"/>
                         </constraints>
                     </view>
@@ -60,6 +69,7 @@
                     <connections>
                         <outlet property="btnNormalView" destination="29i-6L-sDO" id="iVo-zq-ceN"/>
                         <outlet property="btnShowCase" destination="NdF-CF-aVJ" id="oo5-1a-u2B"/>
+                        <outlet property="btnSwiftView" destination="TTF-Gv-8zc" id="Afa-O8-cF8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
